@@ -1,0 +1,203 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:Minecraft Regular;
+                font-style: normal;
+                text-transform: capitalize;
+                text-decoration: none;
+                viewport-fit: center;
+            }
+
+            body{
+                min-height: 100%;
+                background-image: url(../body-bg.png);
+                background-size: 5%;
+                background-position: absolute;
+                width: 1440px;
+                height: 2520px;
+            }
+
+            header{
+                position: fixed;
+                top: 0; left: 0; right: 0;
+                background: #000;
+                box-shadow: 0 10px 2px rgba(0, 0, 0,0.1);
+                padding: 10px 7%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                z-index: 100;
+                height: 75;
+            }
+
+            header .title{
+                font-weight: bolder;
+                font-size: 30px;
+                color: #fff;
+            }
+            header .navbar ul{
+                list-style: none;
+                float: right;
+            }
+
+            header .navbar ul li{
+                position: relative;
+                float: left;
+            }
+
+            header .navbar ul li a{
+                display: block;
+                color: #fff;
+                margin: auto;
+                padding: 15px 20px;
+                font-size: 15px;
+                height: 40px;
+            }
+            header .navbar ul li a:hover{
+                color: rgb(21, 171, 61);
+                padding: none;
+            }
+            header .navbar ul li.active a{
+                background-color: #000000;
+                color: rgb(21, 171, 61);
+            }
+            header .navbar ul li ul{
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                background: #000;
+                display: none;
+                height: 170px;
+            }
+            header .navbar .Sign-In{
+                margin: 20px 0;
+                padding: 0 30px;
+            }
+            input{
+                border: none;
+                width: 90px;
+                height: 20px;
+                margin: 13px 0;
+                padding: 0px 10px;
+                font-size: 11.5px;
+                text-align: center;
+                outline: none;
+                border-radius: 5px;
+                transition: .5s;
+                cursor: pointer;
+            }
+            p{
+                text-align: center;
+            }
+            header .navbar ul li ul li{
+                width: 100%;
+                border-top: 1px solid rgba(0, 0, 0, .1);
+                height: 25px;
+            }
+
+            header .navbar ul li:hover > ul{
+                display: initial;
+            }
+
+            header .navbar ul li-fas{
+                color: #ffffff;
+                left: 10px;
+            }
+
+            div{
+                background-image: linear-gradient(rgb(0, 0, 0,0.6),rgb(0, 0, 0,0.6));
+                position: absolute;
+                width: 1200px;
+                height: 2500px;
+                left: 150px;
+                top: 211px;
+                viewport-fit: center;
+            }
+
+            div h1{
+                position: absolute;
+                color: #ffffff;
+                font-weight: 500;
+                font-size: 25px;
+                width: 500px;
+                height: 24px;
+                left: 50px;
+                top: 30px;
+            }
+
+            .bg1{
+                background-image: url(../minecraft1.png);
+                position: absolute;
+                width: 300px;
+                height: 450px;
+                left: 30px;
+                top: 80px;
+            }
+
+
+            .bg2{
+                background-image: url(../minecraft2.png);
+                position: absolute;
+                width: 330px;
+                height: 450px;
+                left: 420px;
+                top: 80px;
+            }
+
+            .bg3{
+                background-image: url(../minecraft3.png);
+                position: absolute;
+                width: 330px;
+                height: 450px;
+                left: 840px;
+                top: 80px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="title">Minecraft<br/> Community </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Useful Pages <i class="fas fa-sort-down"></i></a>
+                        <ul>
+                            <li><a href="https://www.minecraft-crafting.net/">Crafting</a></li>
+                            <li><a href="mobs.html">Mobs</a></li>
+                            <li><a href="enchanting.html">Enchanting</a></li>
+                            <li><a href="brewing.html">Brewing</a></li>
+                            <li><a href="smelling.html">Smelting</a></li>
+                            <li><a href="items.html">Items</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="download.html">Download <i class="fas fa-download"></i></a></li>
+                    <li><a href="#">Sign-In</a>
+                        <ul>
+                           
+                            <p style="color: white;">Username</p>
+                            <input class = "textbox" type = "text" placeholder="Usesername">
+                            <p style="color: white;">Password</p>
+                            <input class = "textbox" type = "password" placeholder="Password">
+                            <input type ="submit" value="Login">
+                        
+                        </ul>
+                    </li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a style="color: white;" ><i class="far fa-user"></i></a></li>
+                </ul>
+            </nav>
+    </header>
+</body>
+<div class="word">
+    <h1>Minecraft Updates <i class="fas fa-wrench"></i></h1>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+</div>
+</html>
